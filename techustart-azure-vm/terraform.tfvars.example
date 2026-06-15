@@ -1,0 +1,2 @@
+azure_region = "eastus"
+tamano_vm    = "Standard_B1s"
