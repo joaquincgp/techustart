@@ -16,7 +16,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-  resource_provider_registrations = "none"
+  resource_provider_registrations = "core"
 }
 
 resource "azurerm_resource_group" "main" {
@@ -42,7 +42,7 @@ resource "azurerm_public_ip" "main" {
   name                = "techustart-public-ip"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
-  allocation_method   = "Dynamic"
+  allocation_method   = "Static"
 }
 
 resource "azurerm_network_security_group" "main" {
