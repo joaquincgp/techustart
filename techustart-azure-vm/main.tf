@@ -16,7 +16,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-  resource_provider_registrations = "core"
+  resource_provider_registrations = "none"
 }
 
 resource "azurerm_resource_group" "main" {
